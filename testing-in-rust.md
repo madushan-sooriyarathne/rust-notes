@@ -23,6 +23,7 @@ mod tests {
 
  - We can use `assert!()`, `assert_eq!()`, `assert_ne!()` macros in-side the test functions. 
  - Also, we can use `#[should_panic]` attribute along with `#[test]` attribute to test _panicable_ state. By adding a `#[should_panic(expected="panic message here")]` expected parameter, we can specify which panic type we are expecting. 
+ - By adding `#[ignore]` attribute to test function, We can tell rust compiler to skip this test. 
  - Also, We can return `Result<T, E>` enum from the test function. When returned the `Err` test will be failed. (example below)
 
 
